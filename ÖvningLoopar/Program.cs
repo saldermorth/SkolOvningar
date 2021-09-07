@@ -4,45 +4,140 @@ namespace ÖvningLoopar
 {
     class Program
     {
-        enum infoTyp
-        {
-            Namn,
-            Adress,
-            Postnummer,
-            ort
-        }
+      
         static void Main(string[] args)
 
         {
 
-            infoTyp adressUppg = new infoTyp();
-            //Övning Loopar
+            //Övning Loopar V.2
 
+            /*12. Du har talen 265-290. Summera alla jämna tal och ta sedan fram
+                medelvärdet. Skriv ut summan till skärmen.*/
+    
+            /*11. Hur många tal mellan 1-1000 är jämt delbara med 17? Skriv ut antalet till
+                skärmen. */
+
+            //int counter = 0;
+
+            //for (int i = 1; i < 1000; i++)
+            //{
+            //    if (i%17 == 0)
+            //    {
+            //        counter++;
+            //    }
+            //}
+            //Console.WriteLine($"{counter} st tal är delbara med 17. Mellan 1 och 1000" );
+
+            /*10. Skapa ett program där användaren skall logga in. 
+             Ta emot inmatade värden i variabler. 
+             a. Skapa en konstant som innehåller användarnamn. Sätt värdet på den till abc123
+             b. Skapa en konstant som innehåller lösenord. Sätt värdet på den till password
+             c. Skriv ett meddelande till användaren och be denne att ange användarnamn
+             d. Skriv ett meddelande till användaren och be denne att ange lösenord
+             e. Om användaren anger ett riktigt användarnamn och lösenord, visa ett
+                meddelande som säger- Du är inloggad. Avsluta programmet. 
+             f. Om användaren anger felaktiga uppgifter , skriv ett meddelande på
+              skärmen och tala om vad som var felaktigt. Fråga om användaren vill försöka
+                igen(J/N). Om svaret är J skall inloggningen återupprepas.*/
+            //const string userName = "abc123";
+            //const string password = "password";
+            //bool exitLoop = true; 
+            //do
+            //{
+            //    Console.WriteLine("Mata in username");
+            //    string inputUsername = Console.ReadLine();
+
+            //    Console.WriteLine("Mata in password");
+            //    string inputPassword = Console.ReadLine();
+
+            //    if (userName == inputUsername && password == inputPassword)
+            //    {
+            //        Console.WriteLine("Du är inloggad");
+            //        Environment.Exit(1);
+            //    }
+            //    else
+            //    {
+
+            //        Console.WriteLine("Vill du försöka igen?");
+            //        Console.WriteLine("J/N ?");
+            //        string tryAgain = Console.ReadLine();
+            //        if (tryAgain == "J")
+            //        {
+            //            continue;
+            //        }
+            //        else if (tryAgain == "N")
+            //        {
+            //            Environment.Exit(1);
+            //        }
+            //        else
+            //        {
+            //            Environment.Exit(1);
+            //        }
+            //    }
+            //} while (!exitLoop);
 
             /*9. Skapa ett program där användaren skall mata in kontaktuppgifter. Ta emot
-            alla värden i variabler
-            a. Be användaren mata in sitt namn, gatuadress, postnummer och postort.
-            
-            b. Kontrollera att alla uppgifter är ifyllda. Är dom det skall ett meddelande
-            visas för användaren som säger- Alla uppgifter ifyllda. Programmet avslutas sedan. 
+        alla värden i variabler
+        a. Be användaren mata in sitt namn, gatuadress, postnummer och postort.
 
-            c. Om inte alla uppgifter är ifyllda skall man börja om med steg a-d. 
-            Kontrollera för varje värde om just det värdet är ifyllt. 
-            Programmet skall inte be  användaren mata in ett värde som redan är inmatat.*/
+        b. Kontrollera att alla uppgifter är ifyllda. Är dom det skall ett meddelande
+        visas för användaren som säger- Alla uppgifter ifyllda. Programmet avslutas sedan. 
 
-            string name;
-            string adress;
-            string postnummer;
-            string ort;
-            string[] adresser = new string[4];
+        c. Om inte alla uppgifter är ifyllda skall man börja om med steg a-d. 
+        Kontrollera för varje värde om just det värdet är ifyllt. 
+        Programmet skall inte be  användaren mata in ett värde som redan är inmatat.*/
+            //      enum infoTyp --- flytta detta kodblock utanför main
+            //{
+            //    Namn,
+            //    Adress,
+            //    Postnummer,
+            //    ort
+            //}
 
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine($"Mata in " + adressUppg+ ":");
+            //infoTyp adressUppg = new infoTyp();
+            //string name;
+            //string adress;
+            //string postnummer;
+            //string ort;
+            //string[] adresser = new string[4];
+            //string temp;
 
-                adressUppg++;
-            }
-            
+            //for (int i = 0; i < 4; i++)
+            //{
+
+            //    Console.WriteLine($"Mata in " + adressUppg+ ":");
+            //    temp = Console.ReadLine();
+            //    //TODO 
+
+
+            //        adresser[i] = temp;
+
+
+            //    adressUppg++;
+            //}
+
+            //foreach (var item in adresser)
+            //{
+            //    //TODO
+            //    if (item == null || item == "")
+            //    {
+            //        Console.WriteLine("Du har tomma fält");
+            //        Console.ReadKey();
+
+            //        Environment.Exit(2);
+            //    }
+
+
+
+            //}
+            //foreach (var item2 in adresser)
+            //{
+            //    Console.WriteLine(item2);
+            //}
+            //Console.Clear();
+
+
+
 
 
             /*8. Skapa ett program där användaren får mata in ett tal. 
