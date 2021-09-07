@@ -13,6 +13,27 @@ namespace ÖvningLoopar
 
             /*12. Du har talen 265-290. Summera alla jämna tal och ta sedan fram
                 medelvärdet. Skriv ut summan till skärmen.*/
+
+            
+            //int j = 290;
+            //int counter = 0;
+            //int numbers = 0;
+            //int result = 0;
+
+            //for (int i = 265; i < j; i++)
+            //{
+            //    if (i%2 == 0)
+            //    {
+            //        numbers = numbers + i;
+            //        counter++;
+
+            //    }
+            //}
+
+            //result = numbers / counter;
+
+            //Console.WriteLine(result);
+            //Console.ReadKey();
     
             /*11. Hur många tal mellan 1-1000 är jämt delbara med 17? Skriv ut antalet till
                 skärmen. */
