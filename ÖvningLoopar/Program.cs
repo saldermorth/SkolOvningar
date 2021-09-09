@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ÖvningLoopar
 {
@@ -45,9 +46,28 @@ namespace ÖvningLoopar
             e. Gör om strängen b så att den ser ut så här:" i Am A C# hAcKeR" 
             */
             //string str = "I am a C# hacker.";
-            //int lastPos = str.LastIndexOf("a");
-
-            //Console.WriteLine($"Last index of a is number : {lastPos}");
+            //str = str.Replace(".", "");
+            //int lastPosA = str.LastIndexOf("a");
+            //int lastPosC = str.LastIndexOf("C");
+            //int strLength = str.Length;
+            //string[] inToWords = str.Split(" ");
+            
+            //str = str.Replace("I", "i");
+            //str = str.Replace("a", "A");
+            //str = str.Replace("k", "K");
+            //str = str.Replace("r", "R");
+            
+            //string hecker = inToWords[4];
+            //Console.WriteLine(str);
+            //Console.WriteLine("\n");
+            //foreach (var item in inToWords)
+            //{
+            //    Console.Write(item);
+            //}
+            //Console.WriteLine("\n");
+            //Console.WriteLine($"Last index of a is number : {lastPosA}");
+            //Console.WriteLine($"Last index of a is number : {lastPosC}");
+            //Console.WriteLine($"Word: {hecker}");
 
             /*
 
@@ -174,7 +194,7 @@ namespace ÖvningLoopar
             //    }
 
 
-         
+
 
 
             ////}
@@ -184,9 +204,9 @@ namespace ÖvningLoopar
             //    Console.Write(item);
             //}
 
-            
 
-           
+
+
 
             /*
 
@@ -194,16 +214,119 @@ namespace ÖvningLoopar
             9.Gör ett program där användaren får mata in en mening t ex ”Detta
             är min text som jag matar in”. Programmet skall räkna ut hur många
             ord meningen består av och meddela användaren om detta.
+
+            */
+            //string sentance = "Detta är min text som jag matar in";
+            //char[] sentanceArray = sentance.ToCharArray();
+            //int counter = 0;
+
+            //foreach (char A in sentanceArray)
+            //{
+            //    switch (A)
+            //    {
+            //        case ' ':
+            //            counter++;
+            //            break;
+            //        default:
+            //            break;
+            //    }
+
+            //}
+            //Console.WriteLine($"Meningen inehåller : {counter+1} ord.");
+
+
+            /*
+
             
             10.Be användare mata in ett ord eller en mening. Programmet skall
             kontrollera om det ordet är en palindrom dvs om ordet blir likadant
             om man läser framifrån och bakifrån. Exempel på palindrom är
-            namn som ”anna” eller ”otto” eller en mening som ”ni talar bra latin”. Meddela användaren om det är en palindrom eller ej.
-            
-            11.Be användaren mata in ett fullständigt personnummer. Koden
-            skall kontrollera om det är ett giltigt personnummer. Meddela
-            användaren om det är ett giltigt eller ogiltigt personnummer. Ett
-            personnummer räknas ut enligt den så kallade ”10-modulmetoden” ( sök på det så hittar ni vilka regler som gäller för uträkningen)*/
+            namn som ”anna” eller ”otto” eller en mening som ”ni talar bra latin”. 
+            Meddela användaren om det är en palindrom eller ej.
+
+            */
+            //string input = "naturrutan";
+            //int inputLength = input.Length;
+            //string inputReverse ="";
+            //input = input.ToLower();            
+
+            //char[] verse = input.ToCharArray();            
+
+            //for (int i = verse.Length - 1; i > -1; i--)
+            //{
+            //    inputReverse += verse[i];
+            //}
+            //Console.WriteLine(inputReverse);
+            //Console.WriteLine(input);
+            //bool isReveseble = inputReverse.Equals(input);
+            //Console.WriteLine($"String is palidrom = {isReveseble}");
+
+            /*
+
+             11.Be användaren mata in ett fullständigt personnummer. Koden
+             skall kontrollera om det är ett giltigt personnummer. Meddela
+             användaren om det är ett giltigt eller ogiltigt personnummer. Ett
+             personnummer räknas ut enligt den så kallade ”10-modulmetoden” 
+            ( sök på det så hittar ni vilka regler som gäller för uträkningen)*/
+
+            //Console.WriteLine("Skriv in ett personnummer. 10 siffror.");
+            //long sSNumber;
+
+            //string nummer = "8306021430";//Console.ReadLine(); //personnummer as string
+
+            //char[] numArray = nummer.ToCharArray(); //personnummer as CharArray
+
+            //int[] numIntArray = new int[10];
+
+            //int temp1 =0;
+
+            //int temp2 = 0;
+
+            //do
+            //{             
+
+            //    for (int i = 0; i < numArray.Length; i++)//Char array to int array.
+            //    {
+            //        numIntArray[i] = (numArray[i] - '0');
+            //    }
+            //    try
+            //    {
+            //        sSNumber = Convert.ToInt64(nummer);
+            //        break;
+            //    }
+            //    catch (Exception F)
+            //    {
+            //        Console.WriteLine($"Fel {F}");
+
+            //    }
+            //} while (true);
+
+            //for (int i = 0; i < numIntArray.Length; i++)
+            //{
+            //    if (i%2 == 1)// if odd do this if even do that
+            //    {
+            //        temp1 = numIntArray[i] * 2;
+            //        if (temp1 < 9)//if double digit split them up and add
+            //        {
+            //            string dubleDigits = temp1.ToString();
+
+            //            char[] singleDigits = dubleDigits.ToCharArray();
+
+            //            for (int j = 0; j < singleDigits.Length; j++)
+            //            {
+            //                temp2 = temp2 + (singleDigits[j]-48);
+            //            }
+            //        }
+
+            //    }
+            //    else
+            //    {
+            //        temp2 = temp2 + (numIntArray[i] * 1);
+            //    }
+
+            //}
+            //Console.WriteLine(temp2);
+            //Console.WriteLine(temp2/10);
 
             //Övning Loopar V.2
 
