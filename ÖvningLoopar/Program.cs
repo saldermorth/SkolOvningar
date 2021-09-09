@@ -5,10 +5,12 @@ namespace ÖvningLoopar
 {
     class Program
     {
-      
-        static void Main(string[] args)
-
+        
+             static void Main(string[] args)
+        
         {
+            
+
             /*Övningsuppgifter-Stränghantering
             1.Be användaren mata in 3 strängar. Addera ihop strängarna och skriv ut alla tre strängarna på
             skärmen. 
