@@ -8,6 +8,202 @@ namespace ÖvningLoopar
         static void Main(string[] args)
 
         {
+            /*Övningsuppgifter-Stränghantering
+            1.Be användaren mata in 3 strängar. Addera ihop strängarna och skriv ut alla tre strängarna på
+            skärmen. 
+            */
+            //string[] ordArray = new string[3];
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine("Skriv en ord :");
+            //    ordArray[i] = Console.ReadLine();
+            //}
+
+            //for (int i = 0; i < ordArray.Length; i++)
+            //{
+            //    Console.Write(ordArray[i] +" ");
+            //}
+            /*
+            2.Du har en strängvariabel som innehåller följande text, ”Hello, world” 
+            a. Ta med hjälp av kod ut första förekomsten av bokstaven w
+            b. Skriv ut vilken position bostaven w har i strängen (H har position 0). Ta fram positionen genom kod. 
+            */
+
+            //string str = "Hello, World";
+            //int pos = str.LastIndexOf("W");
+            //Console.WriteLine(str.LastIndexOf("W"));
+            //Console.WriteLine($"W is att the number {pos} index.");
+
+            /*
+            3.Du har en strängvariabel som ser ut så här string b ="I am a C# hacker." 
+            a. Skriv ut vilken position sista a har
+            b. Skriv ut i vilken position ”C” har i strängen ovan. Skriv samtidigt
+            ut längden på hela strängen ovan
+            c. Skriv ut varje ord för sig under varandra i en skärmutskrift
+            d. Plocka ut delsträngen ' hacker' ur b ovan via kod och skriv på
+            skärmen
+            e. Gör om strängen b så att den ser ut så här:" i Am A C# hAcKeR" 
+            */
+            //string str = "I am a C# hacker.";
+            //int lastPos = str.LastIndexOf("a");
+
+            //Console.WriteLine($"Last index of a is number : {lastPos}");
+
+            /*
+
+
+           4.Du har strängen string namn="kurt andersson";
+           Skriv kod så att förnamn och efternamn i variabeln namn börjar
+           med stora bokstäver. Resultatet skall bli så här "Kurt Andersson"
+           */
+            //string str = "kurt anderson";
+            //string toUpper = str.Replace("k","K");
+            //toUpper=toUpper.Replace("a", "A");
+            //Console.WriteLine(toUpper);
+
+            /*
+            
+            5.Du har en sträng med texten ”Detta är en sträng som du skall
+            ändra”. Ersätt via kod alla blanktecken i strängen med tecknet * . Räkna
+            sedan ut via kod hur många förekomster det finns av tecknet * i
+            strängen. 
+
+            */
+            //string str = "Detta är en sträng som du skall ändra";
+            //str = str.Replace(" ", "*");
+            //int starCounter = 0;
+            //char[] charts = str.ToCharArray();
+
+            //foreach (char item in charts)
+            //{
+            //    switch (item)
+            //    {
+            //        case '*':
+            //            starCounter++;
+            //            break;
+            //        default:
+            //            break;
+            //    }
+            //}
+            //Console.WriteLine(str);
+            //Console.WriteLine(starCounter +" number of * in frase" ); 
+
+
+            /*
+            
+            6.Du har en kommaseparerad sträng som ser ut så
+            här ”ett,två,tre,fyra,fem,sex,sju”. 
+            Skapa en array där varje värde i strängen hamnar i en egen position
+            i arrayen dvs ett hamnar i första positionen och två i andra
+            positionen och tre i den tredje osv. 
+            */
+            //string str = "ett, två, tre, fyra, fem, sex, sju";
+            //str.Replace(" ", "");
+            //string[] test = str.Split(',');
+
+            //foreach (var item in test)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            /*
+
+            
+            7.Be användaren mata in en mailadress. Programmet skall
+            kontrollera att inmatningen är rätt dvs att det finns ett @ tecken
+            och att det finns en (.) med 2 eller 3 tecken efter. Meddela
+            användaren om det är rätt eller felaktig adress
+            */
+            //string emailAdress = "";
+            //Console.WriteLine("Vad är din email adress");
+            //emailAdress = Console.ReadLine();
+
+            //string emailAdress = "berg_gustav@hotmail.c";
+
+            //emailAdress = emailAdress.Trim();
+
+            //bool att = emailAdress.Contains("@");
+            //bool dot = emailAdress.Contains(".");
+            //int indexOfDot = emailAdress.IndexOf(".");
+            //int lengthOfEmail = emailAdress.Length;
+            //int endToDotCount = (lengthOfEmail -1)- indexOfDot;
+
+            //if (endToDotCount >3 || endToDotCount <2)
+            //{
+            //    Console.WriteLine("Invalid email");
+            //}
+            //else if ( att && dot)
+            //{
+            //    Console.WriteLine("Valid email");
+            //}
+
+
+            /*
+
+            Lite svårare uppgifter:
+            
+            
+            8.Sortera strängen "231596874" till strängen "123456789" med en egen
+            sorteringsfunktion. 
+            */
+            //string randomized = "231596874";
+            //int[] radomizedInt = new int[9];
+
+            //char[] stillRandom = randomized.ToCharArray();
+            //for (int i = 0; i < stillRandom.Length; i++)
+            //{
+            //    radomizedInt[i] = Convert.ToInt32(stillRandom[i] - '0');
+            //}
+
+            //int temp;
+            ////foreach (var item in stillRandom)
+            ////{
+            ////    Console.Write(item);
+            ////}
+
+            //for (int i = 0; i < radomizedInt.Length - 1; i++)
+            //{
+            //    for (int j = 0; j < radomizedInt.Length - 1; j++)
+            //    {
+            //        if (radomizedInt[j] > radomizedInt[j+1])
+            //        {
+            //            temp = radomizedInt[j + 1];
+            //            radomizedInt[j + 1] = radomizedInt[j];
+            //            radomizedInt[j] = temp;
+            //        }
+
+            //    }
+
+
+         
+
+
+            ////}
+            //Console.WriteLine("\n");
+            //foreach (var item in radomizedInt)
+            //{
+            //    Console.Write(item);
+            //}
+
+            
+
+           
+
+            /*
+
+
+            9.Gör ett program där användaren får mata in en mening t ex ”Detta
+            är min text som jag matar in”. Programmet skall räkna ut hur många
+            ord meningen består av och meddela användaren om detta.
+            
+            10.Be användare mata in ett ord eller en mening. Programmet skall
+            kontrollera om det ordet är en palindrom dvs om ordet blir likadant
+            om man läser framifrån och bakifrån. Exempel på palindrom är
+            namn som ”anna” eller ”otto” eller en mening som ”ni talar bra latin”. Meddela användaren om det är en palindrom eller ej.
+            
+            11.Be användaren mata in ett fullständigt personnummer. Koden
+            skall kontrollera om det är ett giltigt personnummer. Meddela
+            användaren om det är ett giltigt eller ogiltigt personnummer. Ett
+            personnummer räknas ut enligt den så kallade ”10-modulmetoden” ( sök på det så hittar ni vilka regler som gäller för uträkningen)*/
 
             //Övning Loopar V.2
 
