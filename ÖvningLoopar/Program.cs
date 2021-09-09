@@ -14,7 +14,7 @@ namespace ÖvningLoopar
             /*12. Du har talen 265-290. Summera alla jämna tal och ta sedan fram
                 medelvärdet. Skriv ut summan till skärmen.*/
 
-            
+
             //int j = 290;
             //int counter = 0;
             //int numbers = 0;
@@ -34,7 +34,7 @@ namespace ÖvningLoopar
 
             //Console.WriteLine(result);
             //Console.ReadKey();
-    
+
             /*11. Hur många tal mellan 1-1000 är jämt delbara med 17? Skriv ut antalet till
                 skärmen. */
 
@@ -107,56 +107,58 @@ namespace ÖvningLoopar
         c. Om inte alla uppgifter är ifyllda skall man börja om med steg a-d. 
         Kontrollera för varje värde om just det värdet är ifyllt. 
         Programmet skall inte be  användaren mata in ett värde som redan är inmatat.*/
-            //      enum infoTyp --- flytta detta kodblock utanför main
+            //bool alltIfyllt = false;
+            //string[] visningsinfo = new string[] { "Namn", "Gatuadress", "PostNummer", "Postort" };
+            //string[] inmatat = new string[4];
+
+
+
+            //for (int i = 0; i < visningsinfo.Length; i++)
             //{
-            //    Namn,
-            //    Adress,
-            //    Postnummer,
-            //    ort
+            //    Console.WriteLine("Skriv in " + visningsinfo[i] + ":");
+
+            //    inmatat[i] = Console.ReadLine();
             //}
 
-            //infoTyp adressUppg = new infoTyp();
-            //string name;
-            //string adress;
-            //string postnummer;
-            //string ort;
-            //string[] adresser = new string[4];
-            //string temp;
-
-            //for (int i = 0; i < 4; i++)
+            //do
             //{
-
-            //    Console.WriteLine($"Mata in " + adressUppg+ ":");
-            //    temp = Console.ReadLine();
-            //    //TODO 
-
-
-            //        adresser[i] = temp;
-
-
-            //    adressUppg++;
-            //}
-
-            //foreach (var item in adresser)
-            //{
-            //    //TODO
-            //    if (item == null || item == "")
+            //    for (int i = 0; i < inmatat.Length; i++)
             //    {
-            //        Console.WriteLine("Du har tomma fält");
-            //        Console.ReadKey();
-
-            //        Environment.Exit(2);
+            //        if (inmatat[i] == null || inmatat[i] == "")
+            //        {
+            //            switch (visningsinfo[i])
+            //            {
+            //                case "Namn":
+            //                    Console.WriteLine("Skriv in : Namn");
+            //                    alltIfyllt = false;
+            //                    break;
+            //                case "Gatuadress":
+            //                    Console.WriteLine("Skriv in : Gatuadress");
+            //                    inmatat[i] = Console.ReadLine();
+            //                    alltIfyllt = false;
+            //                    break;
+            //                case "PostNummer":
+            //                    Console.WriteLine("Skriv in : PostNummer");
+            //                    alltIfyllt = false;
+            //                    break;
+            //                case "Postort":
+            //                    Console.WriteLine("Skriv in : Postort");
+            //                    alltIfyllt = false;
+            //                    break;
+            //                default:
+            //                    break;
+            //            }
+            //        }
             //    }
+            //} while (alltIfyllt);
 
 
 
-            //}
-            //foreach (var item2 in adresser)
+
+            //for (int i = 0; i < inmatat.Length; i++)
             //{
-            //    Console.WriteLine(item2);
+            //    Console.WriteLine(inmatat[i]);
             //}
-            //Console.Clear();
-
 
 
 
