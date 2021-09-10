@@ -9,7 +9,7 @@ namespace ÖvningLoopar
              static void Main(string[] args)
         
         {
-            
+
 
             /*Övningsuppgifter-Stränghantering
             1.Be användaren mata in 3 strängar. Addera ihop strängarna och skriv ut alla tre strängarna på
@@ -53,12 +53,12 @@ namespace ÖvningLoopar
             //int lastPosC = str.LastIndexOf("C");
             //int strLength = str.Length;
             //string[] inToWords = str.Split(" ");
-            
+
             //str = str.Replace("I", "i");
             //str = str.Replace("a", "A");
             //str = str.Replace("k", "K");
             //str = str.Replace("r", "R");
-            
+
             //string hecker = inToWords[4];
             //Console.WriteLine(str);
             //Console.WriteLine("\n");
@@ -147,13 +147,13 @@ namespace ÖvningLoopar
             //bool dot = emailAdress.Contains(".");
             //int indexOfDot = emailAdress.IndexOf(".");
             //int lengthOfEmail = emailAdress.Length;
-            //int endToDotCount = (lengthOfEmail -1)- indexOfDot;
+            //int endToDotCount = (lengthOfEmail - 1) - indexOfDot;
 
-            //if (endToDotCount >3 || endToDotCount <2)
+            //if (endToDotCount > 3 || endToDotCount < 2)
             //{
             //    Console.WriteLine("Invalid email");
             //}
-            //else if ( att && dot)
+            //else if (att && dot)
             //{
             //    Console.WriteLine("Valid email");
             //}
