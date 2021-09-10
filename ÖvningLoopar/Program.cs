@@ -187,7 +187,7 @@ namespace ÖvningLoopar
             char[] stillRandom = randomized.ToCharArray();
             for (int i = 0; i < stillRandom.Length; i++)
             {
-                radomizedInt[i] = Convert.ToInt32(stillRandom[i] - '\u0048');
+                radomizedInt[i] = Convert.ToInt32(stillRandom[i] - 48);
             }
 
             int temp;
