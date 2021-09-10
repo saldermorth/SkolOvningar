@@ -288,7 +288,7 @@ namespace ÖvningLoopar
                 //Console.WriteLine("Skriv in ett personnummer. 10 siffror.");
                 //long sSNumber;
 
-                //string nummer = "8306021430";//Console.ReadLine(); //personnummer as string
+                //string nummer = "8306061233";//Console.ReadLine(); //personnummer as string
 
                 //char[] numArray = nummer.ToCharArray(); //personnummer as CharArray
 
