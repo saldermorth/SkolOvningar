@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ÖvningLoopar
@@ -6,10 +7,23 @@ namespace ÖvningLoopar
     class Program
     {
         
-             static void Main(string[] args)
-        
-        {
+            static void Main(string[] args)
+            { 
 
+
+           
+            //Func<int, int> func1 = x => x + 1;
+            //Console.WriteLine("FUNC1: {0}", func1.Invoke(200));
+
+            // {
+            // List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            // Func<int, bool> oddCheck = x => x % 2 != 0; //If not even
+
+            // var oddNumbers = numbers.Where(oddCheck);
+
+            // Console.WriteLine();
+            //oddNumbers.For(x => Console.WriteLine(x));
 
             /*Övningsuppgifter-Stränghantering
             1.Be användaren mata in 3 strängar. Addera ihop strängarna och skriv ut alla tre strängarna på
@@ -143,7 +157,7 @@ namespace ÖvningLoopar
 
             //emailAdress = emailAdress.Trim();
 
-            //bool att = emailAdress.Contains("@");
+            //  bool att = emailAdress.Contains("@");
             //bool dot = emailAdress.Contains(".");
             //int indexOfDot = emailAdress.IndexOf(".");
             //int lengthOfEmail = emailAdress.Length;
