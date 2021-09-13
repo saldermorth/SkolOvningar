@@ -6,26 +6,26 @@ namespace ÖvningLoopar
 {
     class Program
     {
-        
-            static void Main(string[] args)
+
+        static void Main(string[] args)
             {
 
 
-            string str1 = "test";
-            string str2 = "fest";
-            string str3 = (string)str2.Clone();
-            
-            int same = str1.CompareTo(str2);
-            if (same != 1)
-            {
-                Console.WriteLine($"test och fest är samma ord: ");
-            }
-            else
-            {
-                Console.WriteLine( "Inte samma");
-            }
+            //string str1 = "test";
+            //string str2 = "fest";
+            //string str3 = (string)str2.Clone();
 
-            Console.ReadLine();
+            //int same = str1.CompareTo(str2);
+            //if (same != 1)
+            //{
+            //    Console.WriteLine($"test och fest är samma ord: ");
+            //}
+            //else
+            //{
+            //    Console.WriteLine( "Inte samma");
+            //}
+
+            //Console.ReadLine();
             /*
              * Övningsuppgifter-Array
             1. Skapa ett program där användaren får upp ett antal frågor där den
@@ -164,14 +164,14 @@ namespace ÖvningLoopar
             //for (int i = 0; i < numcount; i++)
             //{
             //    Console.WriteLine(temps[i] + "  Recorded at  :" + noted[i].ToShortTimeString() );
-                
+
             //}
 
             //foreach (decimal item in temps)
             //{
             //    Console.WriteLine(item+" ");
             //    Console.WriteLine();
-                
+
             //}
 
             //Console.WriteLine("\nMin :"+temps.Min());
@@ -179,35 +179,229 @@ namespace ÖvningLoopar
 
 
             /*
-            7. Skapa ett program där användaren får mata in en inköpslista. Börja med att fråga användaren hur många varor den skall ha på sin
-            lista. Gör en loop som gås igenom det antal gånger som användaren
+            7. Skapa ett program där användaren får mata in en inköpslista. 
+            Börja med att fråga användaren hur många varor den skall ha på sin lista. 
+            Gör en loop som gås igenom det antal gånger som användaren
             angivit. Inne i loopen skall tre frågor anges- Vilken vara som
             användaren vill lägga till- Vilket pris varan har – Vilket
             produktnummer. Spara alla dessa värden i en array. Loopa sedan
             igenom arrayen och skriv ut alla varor som användaren har angivit
             med alla uppgifter på skärmen. 
+
+            */
+            //int numOfProducts= 0;
+            //Console.WriteLine("Hur många varor vill du köpa? :");
+            //numOfProducts = Convert.ToInt32(Console.ReadLine());
+
+
+
+            //string[] productName = new string[numOfProducts];
+            //string[] price = new string[numOfProducts];
+            //string[] productNumber = new string[numOfProducts];
+
+
+            //for (int i = 0; i < numOfProducts; i++)
+            //{
+            //    Console.WriteLine("Ange produktens namn : ");
+            //    productName[i] = Console.ReadLine();
+            //    Console.WriteLine("Ange produktens pris : ");
+            //    price[i] = Console.ReadLine();
+            //    Console.WriteLine("Ange produktens nummer : ");
+            //    productNumber[i] = Console.ReadLine();
+            //}
+
+            //for (int i = 0; i < numOfProducts; i++)
+            //{
+            //    Console.WriteLine($"{productName[i], 20} |{price[i],20} | {productNumber[i],20} |");
+            //}
+
+            /*
             
             8. Skapa ett program där användaren skall mata in kontaktuppgifter. Ta emot alla värden i variabler
-            a. Be användaren mata in sitt namn, gatuadress, postnummer, postort. b. Fråga om användaren vill mata in en ny person(J/N)
-            c. Om J återupprepa steg a-e. Detta kan göras max 5 gånger. d. Svarar användaren N eller om 5 personer matats in- e. Skriv ut alla personers uppgifter på skärmen.
+            a. Be användaren mata in sitt namn, gatuadress, postnummer, postort.            
+            b. Fråga om användaren vill mata in en ny person(J/N)
+            c. Om J återupprepa steg a-e. Detta kan göras max 5 gånger. 
+            d. Svarar användaren N eller om 5 personer matats in- e.  Skriv ut alla personers uppgifter på skärmen.
+             */
+            //int counter = 5;
+            //bool whileBreaker = false;
+            //string[] namn = new string[counter];
+            //string[] street = new string[counter];
+            //string[] zipCode = new string[counter];
+            //string[] city = new string[counter];
+            //int i = 0;
+            //do
+            //{
+            //    while (i !=  4 && whileBreaker == false )
+            //    {
+
+            //        Console.WriteLine("Mata in namn :");
+            //        namn[i] = Console.ReadLine();
+
+            //        Console.WriteLine("Mata in gatuadress:");
+            //        street[i] = Console.ReadLine();
+
+            //        Console.WriteLine("Mata in postnummer :");
+            //        zipCode[i] = Console.ReadLine();
+
+            //        Console.WriteLine("Mata in stad:");
+            //        city[i] = Console.ReadLine();
+            //        i++;
+            //        Console.WriteLine("Vill du mata in en till person? J/N");
+            //        char YorN = Convert.ToChar(Console.ReadLine());
+            //        whileBreaker = YorN.Equals('N');
+
+            //    }
+
+
+
+
+
+            //} while (whileBreaker = false);
+
+            //for (int j = 0; j < namn.Length; j++)
+            //{
+            //    if (namn[j] == null)
+            //    {
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"|{namn[j],10} " +
+            //        $"|{street[j],10}" +
+            //        $"|{zipCode[j],10}" +
+            //        $"|{city[i],10}");
+            //    }
+
+            //}
+
+
+
+
+            /*
+
             Lite svårare uppgifter:
             
-            9. Skapa ett program där användaren måste mata in 10 tal. Programmet skall bara spara tal som har ett värde som är mindre än
+            9. Skapa ett program där användaren måste mata in 10 tal. 
+            Programmet skall bara spara tal som har ett värde som är mindre än
             30, annars anses det som felaktigt tal. När användaren matat in 10
             riktiga tal skrivs dessa ut på en lista på skärmen
+
+            */
+            //int counter = 0;
+            //int[] num = new int[10];
+            //int j = 10;
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    Console.WriteLine($"Ange ett nummer, {j} kvar  :");
+            //    int temp = Convert.ToInt32(Console.ReadLine());
+            //    if (temp <30)
+            //    {
+            //        num[i] = temp;
+            //        j--;
+            //    }
+
+
+            //}
+            //Console.Clear();
+            //foreach (int item in num)
+            //{
+            //    Console.WriteLine($"|{"",5} {item,5} |");
+            //}
+
+
+            /*
             
             10. Skapa ett program där användaren måste mata in 5 ord. Ta fram
             det längsta ordet d vs det med flest bokstäver i och skriv ut det på
             skärmen
+            */
+            //string[] words = new string[5];
+            //string temp = "";
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine("Skriv in ett ord :");
+            //    words[i] = Console.ReadLine();
+            //}
+
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    for (int j = 0; j < 4; j++)
+            //    {
+            //        if (words[j].Length < words[j + 1].Length)
+            //        {
+            //            temp = words[j];
+            //            words[j] = words[j + 1];
+            //            words[j + 1] = temp;
+            //        }
+            //    }
+
+
+            //}
+            //Console.Clear();
+            //Console.WriteLine($"{words[1]} är det längsta ordet du skrev in.");
+
+
+
+            /*
             
             11.Skapa ett program där användaren skriver in ett tal. Spara alla
-            felaktiga inmatningar i en array. a. Skriv mata in ett tal på skärmen
+            felaktiga inmatningar i en array. 
+            a. Skriv mata in ett tal på skärmen
             b. Om det är högre än 10 får användaren ett meddelande som
             säger-Värdet är för högt. Visa meddelandet- Mata in ett tal på
-            skärmen. c. Om det är under 10 får användaren ett meddelande som
+            skärmen. 
+            c. Om det är under 10 får användaren ett meddelande som
             säger-Värdet är för lågt . Visa meddelandet- Mata in ett tal på
-            skärmen. d. När användaren matar in 10 avbryts loopen och användaren får
-            meddelandet – Du matade in rätt tal. e. Visa sedan alla tal som matats in innan användaren angav rätt tal. Skriv ut dessa i en lista
+            skärmen. 
+            d. När användaren matar in 10 avbryts loopen och användaren får
+            meddelandet – Du matade in rätt tal. 
+            e. Visa sedan alla tal som matats in 
+            innan användaren angav rätt tal. Skriv ut dessa i en lista
+            */
+            //int[] wrongNums = new int[20];
+            //int temp = 0;
+            //int i = 0;
+            
+            //while (true)
+            //{
+            //    Console.WriteLine("Mata in rätt tal :");
+            //    temp = Convert.ToInt32(Console.ReadLine());
+            //    if (temp != 10 && temp < 10)
+            //    {
+            //        wrongNums[i] = temp;
+            //        i++;
+            //        Console.WriteLine("Gissa högre!");
+            //    }
+            //    else if(temp != 10)
+            //    {
+            //        wrongNums[i] = temp;
+            //        i++;
+            //    }
+            //    else
+            //    {
+            //        break;
+            //    }
+                
+            //}
+            //Console.Clear();
+            //Console.WriteLine("Rätt Gissat");
+            //Console.WriteLine("Dina felaktiga gissningar");
+            //Console.WriteLine("_________________________");
+            //foreach (int item in wrongNums)
+            //{
+            //    if (item != 0)
+            //    {
+            //        Console.WriteLine($"|{"", 8}{item, 8}|");
+            //    }
+            //}
+            
+            
+            
+            /*
+
+
             f. Programmet avbryts.
              */
 
