@@ -7,10 +7,260 @@ namespace ÖvningLoopar
     class Program
     {
         
-            static void Main(string[] args)
+        static void Main(string[] args)
             {
 
+            /*Övningsuppgifter-Metoder
+             1.Skapa ett program med en ny metod. Döp metoden till
+             PrintMessage(). Den skall returnera texten – ”Hello World!”. 
+            
+            PrintMessage();
+
+            static void PrintMessage()
+            {
+             Console.WriteLine("Hello World");
+             }              
+            
+            
+            2.Skapa en metod som heter ToPercentage. Användaren skall mata
+             in ett decimaltal mellan 1 och 0. Metoden omvandlar talet till
+             procent tex skall 0.5 bli 50%. 
+            
+            ToPercentage(0.5);
+
+            static void ToPercentage(double d)
+            {
+                d = d * 100;
+                Console.WriteLine($"{d}%");
+            }
+                       
+                        
+            3.Skapa ett program med en ny metod. Metoden skall ta emot två
+             inparametrar av typen string och slå ihop dom till en sträng och
+             returnera det nya värdet. Anropa den nya metoden från Main och
+             skriv ut resultatet på skärmen. 
+            
+            string done = StringAdder("Hello", "Världen");
+
+            Console.WriteLine(done);
+            static string StringAdder(string a, string b)
+            {
+                string C = $"{a} / {b}";
+                return C;
+            }
+                                 
+            4.Skapa en metod som räknar ut hur mycket momsen blir på en viss
+             summa. Summan skall vara en inparameter av typen int. Metoden
+             skall returnera momsvärdet. 
+            
+            int exMoms = 125;
+            double inkMoms = InkMoms(exMoms);
+            Console.WriteLine($"Momsen på {exMoms}:-. \nÄr : "+inkMoms + ":-");
+
+            static double InkMoms(int exMoms)
+            {
+                double inkMoms = exMoms * 0.125;
+                return inkMoms;
+            }
+            
+            
+            5.Skapa ett program där användaren får en fråga om att mata in sin
+             ålder. Skapa en metod som tar emot det inmatade värdet och
+             kontrollerar om användaren är myndig dvs över 18 år. Metoden returnerar sant eller falskt. Anropa metoden och skriv ut
+             på skärmen om användaren är myndig eller ej.
            
+            int age = 0;
+            Console.WriteLine("Vad är din ålder?");
+            age = Convert.ToInt32(Console.ReadLine());
+            bool offAgeBool = offAge(age);
+
+            Console.WriteLine($"Är du myndig? :{offAgeBool}");
+
+            static bool offAge(int age)
+            {
+                if (age >= 18)
+                {
+                    return true;
+                }
+                else if (age< 18)
+                {
+                    return false;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            
+
+            6.Du skall nu testa att anropa en metod från ytterligare en metod. Skapa först en metod som du döper till MaxVarde2()
+            a. Metoden skall ta två heltal som inparametrar och returnera det värde som är störst. 
+
+            b. Skapa även en metod som du döper till MaxVarde3() som fungerar på samma sätt men tar 3 heltal som inparametrar. 
+            
+            c. Skapa en metod som heter KontrolleraMaxVarde(). Den skall ha tre tal som inparametrar och returnera ett tal tillbaka. 
+            Om någon av inparametrarna är 0 skall metoden MaxVarde2 anropas från denna metod och inparametrarna skickas vidare. 
+            
+            d. Om ingen av inparametrarna är 0 skall metoden MaxVarde3 anropas med de inparametrar som kommit in. 
+            
+            e. KontrolleraMaxVarde() skall returnera det värde från de andra metoderna som är störst. 
+            
+            int max = KontrolleraMaxVarde(0, 12, 11);
+            Console.WriteLine(max);
+
+
+            static int MaxVarde2(int a, int b)
+            {
+                if (a>b)
+                {
+                    return a;
+                }
+                else if (a<b)
+                {
+                    return b;
+                }
+                else if (a==b)
+                {
+                    Console.WriteLine("Talen är lika stora.");
+                    return 0;
+                }
+                return 0;
+            }
+            static int MaxVarde3(int a, int b,int c)
+            {
+                int[] biggest = { a, b, c };
+                
+                int max = biggest.Max();
+                return max;
+            }
+            static int KontrolleraMaxVarde(int a, int b ,int c)
+            {
+                int[] biggest = { a, b, c };
+                List<int> biggestOfTwo = new List<int>();
+                int sum = 0;
+
+                for (int i = 0; i < biggest.Length; i++)
+                {
+                    if (biggest[i]!=0) 
+                    {
+                        biggestOfTwo.Add(biggest[i]);
+                    }
+                }
+                if (biggestOfTwo.Count == 2)
+                {
+                    a = biggestOfTwo[0];
+                    b = biggestOfTwo[1];
+
+                    sum = MaxVarde2(a, b);
+                }
+                else
+                {
+                    a = biggestOfTwo[0];
+                    b = biggestOfTwo[1];
+                    c = biggestOfTwo[2];
+                    sum =MaxVarde3(a,b,c);
+                }
+
+                
+                
+                return sum;
+            }
+            
+
+            
+
+
+            7.Skapa en metod som du döper till HittaLangstaOrdet. Metoden
+             skall ta som inparameter en array med strängar. Metoden skall
+             loopa igenom arrayen och returnera det längsta ordet. 
+            
+
+            string[] namn = { "Anna", "Berit", "Starfly", "Toothless" };
+
+            string längst = HittaLängstaOrdet(namn);
+
+            Console.WriteLine(längst);
+            static string HittaLängstaOrdet(string[] a)
+            {
+                string maxLWord = "";
+                for (int i = 0; i < a.Length; i++)
+                {
+                    for (int j = 0; j < a.Length-1 ; j++)
+                    {
+                        if (a[j].Length < a[j+1].Length)
+                        {
+                            maxLWord = a[i];
+                        }                       
+                        
+                    }                 
+
+                }
+                return maxLWord;
+
+            }
+
+            
+            
+            
+            8.Skapa två metoder , en som heter sum() och en som heter
+             multiply() . Dessa skall summera respektive multiplicera alla tal I en
+             array av heltal.Till exempel , sum([1,2,3,4]) skall returnera 10, och
+             multiply([1,2,3,4]) skall returna 24.
+            
+            int[] numbers = { 1, 2, 3, 4 };
+
+            Console.WriteLine(sum(numbers));
+            Console.WriteLine("_______");
+            Console.WriteLine(add(numbers));
+
+
+            static int sum(int[] a)
+            {
+                int sum = 0;
+                foreach (int i in a)
+                {
+                    sum = sum + i;
+                }
+                return sum;
+            }
+
+
+            static int add(int[] a)
+            {
+                int sum = 0;
+                for (int i = 0; i < a.Length-1; i++)
+                {
+
+                    if (i<1)
+                    {
+                        sum = (a[i] * a[i + 1]);
+                    }
+                    else
+                    {
+                        sum *= a[i + 1];
+                    }
+                    
+                }
+                return sum;
+            }
+            
+            
+            
+
+             Lite svårare uppgifter:
+
+             9.Skapa en metod som tar en bokstav och returnerar true om det är
+             en vokal och false annars. 
+             10.Skriv en metod som du döper till Translate() . Den skall översätta
+             en text till "rövarspråket". Det betyder att dubbla varje konsonant och placera bokstaven ”o” mellan dessa konsonanter. Till example , Translate("this is fun")
+             skall returna strängen "tothohisos isos fofunon". Returnera inte
+             värdet med return utan genom en referens inparameter. 11.Skapa en void metod som du döper till ReferenceOut och tar emot
+             två parametrar av typen int. Den ena skall skickas in som ref och
+             den andra som out. Testa att anropa metoden och sätta om värdet
+             på den båda variablerna inne i metoden. Vad är skillnaden mellan
+             out och ref ? Hur fungerar det praktiskt när du anropar en metod?
+             När skall man använda out respektive ref i en metod?*/
             /*
              * Övningsuppgifter-Array
             1. Skapa ett program där användaren får upp ett antal frågor där den
@@ -149,14 +399,14 @@ namespace ÖvningLoopar
             //for (int i = 0; i < numcount; i++)
             //{
             //    Console.WriteLine(temps[i] + "  Recorded at  :" + noted[i].ToShortTimeString() );
-                
+
             //}
 
             //foreach (decimal item in temps)
             //{
             //    Console.WriteLine(item+" ");
             //    Console.WriteLine();
-                
+
             //}
 
             //Console.WriteLine("\nMin :"+temps.Min());
