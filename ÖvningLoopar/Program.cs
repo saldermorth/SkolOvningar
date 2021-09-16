@@ -10,22 +10,7 @@ namespace ÖvningLoopar
             static void Main(string[] args)
             {
 
-
-            string str1 = "test";
-            string str2 = "fest";
-            string str3 = (string)str2.Clone();
-            
-            int same = str1.CompareTo(str2);
-            if (same != 1)
-            {
-                Console.WriteLine($"test och fest är samma ord: ");
-            }
-            else
-            {
-                Console.WriteLine( "Inte samma");
-            }
-
-            Console.ReadLine();
+           
             /*
              * Övningsuppgifter-Array
             1. Skapa ett program där användaren får upp ett antal frågor där den
