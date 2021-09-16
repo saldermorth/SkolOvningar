@@ -274,7 +274,7 @@ namespace ÖvningLoopar
              Det betyder att dubbla varje konsonant och placera bokstaven ”o” mellan dessa konsonanter. 
              Till example , Translate("this is fun") skall returna strängen "tothohisos isos fofunon". Returnera inte
              värdet med return utan genom en referens inparameter. 
-            */
+            
             string a = "this is fun";
             Translate(ref a);
 
@@ -318,15 +318,31 @@ namespace ÖvningLoopar
                 return true;
             }
 
+                       
             
-            
-            /*
              11.Skapa en void metod som du döper till ReferenceOut och tar emot
              två parametrar av typen int. Den ena skall skickas in som ref och
              den andra som out. Testa att anropa metoden och sätta om värdet
              på den båda variablerna inne i metoden. Vad är skillnaden mellan
              out och ref ? Hur fungerar det praktiskt när du anropar en metod?
+            
+            //Ref value = When we use REF, data can be passed bi-directionally. changes made in the method effects the variable in main for example.
+            //Out value = When we use OUT data is passed only in a unidirectional way (from the called method to the caller method). Do not need to be initialized outside the method but in it.
+            int a = 5;
+            int b;
+            ReferenceOut(ref a, out  b);
 
+            Console.WriteLine(a+ " "+ b);
+            static void ReferenceOut(ref int a, out int b)
+            {
+                a = a + 1;
+
+                b = 1;
+                b = b + 1;
+            }
+            
+            
+            
 
 
              När skall man använda out respektive ref i en metod?*/
