@@ -8,7 +8,7 @@ namespace ÖvningLoopar
     {
         
         static void Main(string[] args)
-            {
+        {
 
             /*Övningsuppgifter-Metoder
              1.Skapa ett program med en ny metod. Döp metoden till
@@ -252,14 +252,83 @@ namespace ÖvningLoopar
 
              9.Skapa en metod som tar en bokstav och returnerar true om det är
              en vokal och false annars. 
-             10.Skriv en metod som du döper till Translate() . Den skall översätta
-             en text till "rövarspråket". Det betyder att dubbla varje konsonant och placera bokstaven ”o” mellan dessa konsonanter. Till example , Translate("this is fun")
-             skall returna strängen "tothohisos isos fofunon". Returnera inte
-             värdet med return utan genom en referens inparameter. 11.Skapa en void metod som du döper till ReferenceOut och tar emot
+            a, e, i, o, u, y, å, ä och ö.
+            
+            char a = 'k';
+
+            bool isVoule = Vokal(a);
+            Console.WriteLine(isVoule);
+
+
+            static bool Vokal(char a)
+            {
+                if (a == 'a' || a== 'e' || a == 'i' || a == 'o' || a == 'u' || a == 'y' || a == 'å' || a == 'ä' || a == 'ö')
+                {
+                    return true;
+                }
+                return false;
+            }
+                        
+
+             10.Skriv en metod som du döper till Translate() . Den skall översätta en text till "rövarspråket".
+             Det betyder att dubbla varje konsonant och placera bokstaven ”o” mellan dessa konsonanter. 
+             Till example , Translate("this is fun") skall returna strängen "tothohisos isos fofunon". Returnera inte
+             värdet med return utan genom en referens inparameter. 
+            */
+            string a = "this is fun";
+            Translate(ref a);
+
+            Console.WriteLine(a);
+
+            static void Translate(ref string a)
+            {
+                char[] b = a.ToCharArray();
+                List<char> k = new List<char>();
+                bool one = false;
+                
+
+                for (int i = 0; i < b.Length; i++)
+                {
+                    
+                        one = Vokal(b[i]);                        
+
+                        if (one)
+                        {
+                            k.Add(b[i]);
+                            k.Add('o');
+                            k.Add(b[i]);                            
+                        }
+                        else
+                        {
+                            k.Add(b[i]);
+                        }
+                                                                
+                }
+                var myString = new string(k.ToArray());
+                a = myString;
+                
+            }
+
+            static bool Vokal(char a)
+            {
+                if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u' || a == 'y' || a == 'å' || a == 'ä' || a == 'ö' | a == ' ')
+                {
+                    return false;
+                }
+                return true;
+            }
+
+            
+            
+            /*
+             11.Skapa en void metod som du döper till ReferenceOut och tar emot
              två parametrar av typen int. Den ena skall skickas in som ref och
              den andra som out. Testa att anropa metoden och sätta om värdet
              på den båda variablerna inne i metoden. Vad är skillnaden mellan
              out och ref ? Hur fungerar det praktiskt när du anropar en metod?
+
+
+
              När skall man använda out respektive ref i en metod?*/
             /*
              * Övningsuppgifter-Array
