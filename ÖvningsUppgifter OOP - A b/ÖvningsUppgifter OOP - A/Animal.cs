@@ -14,6 +14,10 @@ namespace ÖvningsUppgifter_OOP___A
         public int Age { get; set; }
         public int NumbersOfLegs { get; set; }
         public bool Fast { get; set; }
+        public Animal()
+        {
+
+        }
         public Animal(string _type, string _name, int _yearBorn, int _age, int _numberOfLegs, bool _fast)
         {
             Type = _type;
@@ -23,17 +27,7 @@ namespace ÖvningsUppgifter_OOP___A
             NumbersOfLegs = _numberOfLegs;
             Fast = _fast;
         }
-        public string IsFast()
-        {
-            if (Fast)
-            {
-                return "Fast";
-            }
-            else
-            {
-                return "Slow";
-            }
-        }
+        
 
 
     }
