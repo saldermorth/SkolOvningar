@@ -69,12 +69,14 @@ namespace ÖvningsUppgifter_OOP___A
             a.NumbersOfLegs = 4;
             a.NumbersOfLegs = NumLegs(a);
             a.Fast = true;
+            
             return a;
 
         }
         public static string StringMaker(Animal a)
         {
-            string S = $@"Det var en gång en {a.Age} år gammal {a.Type} som hette {a.Name}. En dag var {a.Name} ute på en promenade I skogen, och mötte en stor varg. Vargen bet av ett ben. {a.Name} sprang {a.Fast} hem på sina {a.NumbersOfLegs} ben.Så var sagan slut.";
+            string K = FastOrNot(a.Fast);
+            string S = $"Det var en gång en {a.Age} år gammal {a.Type} som hette {a.Name}. \n En dag var {a.Name} ute på en promenade I skogen, och mötte en stor varg. \nVargen bet av ett ben. {a.Name} sprang {K} hem på sina {a.NumbersOfLegs} ben.Så var sagan slut.";
             return S;
         }
         public static int GetAge(Animal a)
@@ -90,6 +92,19 @@ namespace ÖvningsUppgifter_OOP___A
         {
             int num = a.NumbersOfLegs - 1;
             return num;
+        }
+        public static string FastOrNot(bool b)
+        {
+            string speed;
+            if (b)
+            {
+                speed = "snabbt";
+            }
+            else
+            {
+                speed = "långsamt";
+            }
+            return speed;
         }
     }
 }
